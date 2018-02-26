@@ -30,11 +30,8 @@ export class TextInputWithIndicator extends PureComponent {
     static propTypes = {
         areaWidth: PropTypes.number.isRequired,
         areaHeight: PropTypes.number.isRequired,
-        placeholder: PropTypes.string,
         maxLength: PropTypes.number.isRequired,
-        onChangeText: PropTypes.func,
         indicateMode: PropTypes.number.isRequired,
-        autoFocus: PropTypes.bool,
     };
 
     _onInput = (text) => {
@@ -68,9 +65,9 @@ export class TextInputWithIndicator extends PureComponent {
 
         return (
             <View style={[styles.container, {width: this.props.areaWidth, height: this.props.areaHeight}]}>
-                <TextInput style={[styles.inputArea, {height: this.props.areaHeight}]}
-                           multiline={true} autoFocus={this.props.autoFocus}
-                           placeholder={this.props.placeholder} maxLength={maxLen}
+                <TextInput {...this.props}
+                           style={[styles.inputArea, {height: this.props.areaHeight}]}
+                           maxLength={maxLen}
                            onChangeText={this._onInput}
                 />
                 <View style={[styles.indicatorArea, {width: this.props.areaWidth}]}>

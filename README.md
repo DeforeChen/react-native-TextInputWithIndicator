@@ -17,9 +17,7 @@ You can almost regard the component as a extension of `reac-native` TextInput co
 | --- | :-- | :-- |
 | areaWidth | number | width of component |
 | areaHeight | number | height of component |
-| placeholder | string | placeholder text |
 | maxLength | number | tell component the limit length of your input |
-| onChangeText | func | received the text change event |
 | indicateMode | number |`indicateMode.leftMode`: indicator will display the left length to input.(see the effects image2) |
 |||`indicateMode.alreadyInputMode`: example: indicator will display `1/60`  |
 
@@ -39,10 +37,10 @@ export default class App extends Component<Props> {
                     Welcome to use
                 </Text>
                 <View style={{width:width,height:1,backgroundColor:'black'}}/>
-                <TextInputWithIndicator areaHeight={100} maxLength={60} areaWidth={width} placeholder={'please input'}
-                                        indicateMode={indicateMode.leftMode}
-                                        onChangeText={(t)=>{console.log(t)}} autoFocus={true}
-                />
+                    <TextInputWithIndicator areaHeight={100} maxLength={60} areaWidth={Dimensions.get('window').width}  placeholder={'please input'}
+                                            indicateMode={indicateMode.alreadyInputMode} multiline={true}
+                                            onChangeText={(t)=>{console.log(t)}} autoFocus={true}
+                    />
                 <View style={{width:width,height:1,backgroundColor:'black'}}/>
             </View>
         );
