@@ -1,0 +1,23 @@
+{
+  "name": "react-native-indicatortextinput",
+  "version": "1.0.0",
+  "description": "This component aims at providing a way to show the limit text length and the text length that has already been inputted at the right corner of an TextInput area.",
+  "main": "TextInputWithIndicator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeforeChen/react-native-TextInputWithIndicator.git"
+  },
+  "keywords": [
+    "textinput",
+    "indicator"
+  ],
+  "author": "Defore Chen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DeforeChen/react-native-TextInputWithIndicator/issues"
+  },
+  "homepage": "https://github.com/DeforeChen/react-native-TextInputWithIndicator#readme"
+}

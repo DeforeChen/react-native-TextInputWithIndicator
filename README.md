@@ -1,13 +1,19 @@
-# react-native-TextInputWithIndicator
+# react-native-indicatortextinput
 A customized TextInput component with input length indicator.
-**Work in both iOS and Android platform.**
+**Both worked in iOS and Android platform.**
+
+## Installation
+
+```js
+npm install react-native-indicatortextinput
+```
 
 ## Description
 This component aims at providing a way to show the limit text length and the text length that has already been inputted at the right corner of an TextInput area.
 
 You can almost regard the component as a extension of `reac-native` TextInput component.
 
-## Effects
+## Impression drawing
 
 ![Img1](https://upload-images.jianshu.io/upload_images/1180547-cdce1216d2694d6f.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/316)
 
